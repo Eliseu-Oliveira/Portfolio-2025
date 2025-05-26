@@ -10,7 +10,7 @@ body {
   background-image: url("img/background.jpg");
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -151,7 +151,7 @@ html{
 }
 
 .about p {
-    font-size: 24px;
+  font-size: 24px;
   font-style: italic;
   color: #ffffff;
   margin-top: 10px;
@@ -164,7 +164,7 @@ html{
 }
 
 .about img {
-  max-width: 450px;
+  max-width: 850px;
   border-radius: 8px;
 }
 
@@ -249,7 +249,7 @@ html{
 }
 
 .btn:hover {
-   background-color: #3b82f6;
+  background-color: #3b82f6;
   color: white;
 }
 
@@ -296,3 +296,34 @@ html{
   color: #10b981;
 }
 
+/* MEDIA QUERIES */
+
+@media (max-width: 1050px) {
+  /* */
+  .main h1 {
+    font-size: 40px;
+  }
+
+  .main p {
+    font-size: 18px;
+  }
+
+  .about {
+    flex-direction: column;
+    padding-top: 80px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+
+  .about div {
+    max-width: 80%;
+  }
+  .about div h2 {
+    font-size: 25px;
+  }
+  .about img {
+    max-width: 80%;
+    margin-top: 20px;
+  }
+}
